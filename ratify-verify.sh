@@ -96,6 +96,9 @@ oras manifest fetch kubeconeu.azurecr.io/ratify/package-checker:v0.0.0-alpha.1 |
 slow 'kubectl apply -f package-verifier.yml'
 kubectl apply -f package-verifier.yml
 
+slow 'kubectl get verifiers'
+kubectl get verifiers
+
 slow 'kubectl run demo --image kubeconeu.azurecr.io/demo-app:sha-d0992af7eb825e7ba03fd777016073c3765a1c30'
 kubectl run demo --image kubeconeu.azurecr.io/demo-app:sha-d0992af7eb825e7ba03fd777016073c3765a1c30
 
